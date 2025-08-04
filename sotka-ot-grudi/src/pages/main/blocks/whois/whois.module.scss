@@ -1,0 +1,117 @@
+.page {
+	position: relative;
+	height: 400px;
+
+	@media (max-width: 920px) {
+		height: auto;
+	}
+
+	&__textinfo {
+		color: #1b0b37;
+		display: flex;
+		flex-direction: column;
+		gap: 29px;
+		width: 60%;
+		text-align: left;
+
+		@media (max-width: 920px) {
+			width: 90%;
+			text-align: center;
+		}
+
+		@media (max-width: 700px) {
+			gap: 20px;
+		}
+
+		&__name {
+			font-family: Nunito;
+			font-weight: 800;
+			font-size: 64px;
+			color: #1b0b37;
+
+			@media (max-width: 700px) {
+				font-size: 48px;
+			}
+
+			@media (max-width: 500px) {
+				font-size: 32px;
+			}
+		}
+	}
+}
+
+.girle_wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 350px;
+	width: 50%;
+	border-bottom: 2px solid #b9b8ef;
+
+	@media (max-width: 1200px) {
+		right: 5%;
+	}
+
+	@media (max-width: 920px) {
+		position: relative;
+		margin: 0 auto;
+		height: 250px;
+	}
+
+	&__girl {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0;
+
+		@media (max-width: 1100px) {
+			width: 250px;
+			z-index: 2;
+		}
+	}
+}
+
+.questionWrapper {
+	perspective: 1000px;
+	display: inline-block;
+	position: absolute;
+	right: 15%;
+	top: 20px;
+
+	@media (max-width: 920px) {
+		top: -10px;
+		right: 20px;
+	}
+
+	@media (max-width: 770px) {
+		top: -10px;
+		left: 80%;
+	}
+}
+
+.questionMark {
+	display: block;
+	width: 140px;
+	height: 196px;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	animation: wiggle3d 3s infinite ease-in-out;
+}
+
+@keyframes wiggle3d {
+	0% {
+		transform: rotate3d(1, 1, 0, 0deg);
+	}
+	25% {
+		transform: rotate3d(1, 1, 0, 20deg);
+	}
+	50% {
+		transform: rotate3d(1, 1, 0, 0deg);
+	}
+	75% {
+		transform: rotate3d(1, -1, 0, 20deg);
+	}
+	100% {
+		transform: rotate3d(1, 1, 0, 0deg);
+	}
+}
