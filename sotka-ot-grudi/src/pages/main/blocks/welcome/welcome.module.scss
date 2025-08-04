@@ -27,6 +27,10 @@
 		}
 
 		@media (max-width: 500px) {
+			bottom: 40%;
+		}
+
+		@media (max-width: 420px) {
 			bottom: 30%;
 		}
 	}
@@ -110,6 +114,7 @@
 
 			@media (max-width: 420px) {
 				bottom: 40%;
+				width: 60px;
 			}
 		}
 	}
