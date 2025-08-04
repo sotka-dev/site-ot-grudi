@@ -1,0 +1,20 @@
+.navLink {
+	position: relative;
+	display: block;
+	width: max-content;
+
+	&__text {
+		color: #1b0b37;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 100%;
+	}
+
+	&__isActive {
+		position: absolute;
+		border: 1px solid #f2594b;
+		width: 100%;
+		bottom: -4px;
+	}
+}

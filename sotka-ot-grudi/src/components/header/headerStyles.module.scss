@@ -1,0 +1,28 @@
+@import "../../utils/mixins.scss";
+
+.header {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: white;
+
+	&__content {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		padding: 21px 0;
+
+		&__item {
+			display: flex;
+			gap: 57px;
+			justify-content: space-between;
+		}
+	}
+}
+
+.logo {
+	@include tablet {
+		margin-right: auto;
+	}
+}
