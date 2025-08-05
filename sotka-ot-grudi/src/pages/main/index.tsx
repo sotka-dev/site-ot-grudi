@@ -4,6 +4,7 @@ import styles from "./mainStyles.module.scss";
 import classNames from "classnames/bind";
 import Welcome from "./blocks/welcome";
 import WhoIs from "./blocks/whois";
+import Teachers from "./blocks/texchers";
 
 const cn = classNames.bind(styles);
 
@@ -15,6 +16,7 @@ export const MainPage: FC = () => {
 				<Welcome />
 			</div>
 			<WhoIs />
+			<Teachers />
 		</div>
 	);
 };

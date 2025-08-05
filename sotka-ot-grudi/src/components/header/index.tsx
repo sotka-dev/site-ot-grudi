@@ -32,10 +32,10 @@ export const Header: FC = () => {
 					</div>
 				) : (
 					<div className={cn("header__content")}>
+						<img src="icons/logo_big.svg" className={cn("logo")} />
 						<div className={cn("header__content__item")}>
 							<BurgerMenu />
 						</div>
-						<img src="icons/logo_big.svg" className={cn("logo")} />
 					</div>
 				)}
 			</Container>

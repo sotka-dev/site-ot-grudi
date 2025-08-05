@@ -1,0 +1,53 @@
+.page {
+	background: linear-gradient(to bottom, #c0abec 0%, #a0dff5 100%);
+	border-radius: 100px 100px 0 0;
+	padding-top: 100px;
+
+	@media (max-width: 1000px) {
+		padding-top: 50px;
+	}
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	@media (max-width: 1000px) {
+		gap: 10px;
+	}
+}
+
+.name {
+	font-family: Nunito;
+	font-weight: 800;
+	font-size: 64px;
+	text-align: left;
+	color: #1b0b37;
+	transition: 0.2s;
+
+	@media (max-width: 1000px) {
+		text-align: center;
+	}
+
+	@media (max-width: 770px) {
+		white-space: normal;
+		line-height: 100%;
+	}
+
+	@media (max-width: 700px) {
+		font-size: 48px;
+	}
+
+	@media (max-width: 500px) {
+		font-size: 32px;
+	}
+}
+
+.br {
+	display: none;
+
+	@media (max-width: 770px) {
+		display: block;
+	}
+}

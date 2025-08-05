@@ -1,0 +1,120 @@
+.card {
+	border-radius: 50px;
+	display: flex;
+	color: black;
+	gap: 20px;
+	align-items: center;
+	background-color: white;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+	@media (max-width: 550px) {
+		flex-direction: column;
+		padding: 20px 0;
+		text-align: center;
+		justify-content: center;
+		gap: 10px;
+	}
+}
+
+.image {
+	width: 460px;
+	height: 514px;
+	object-fit: cover;
+	border: 10px solid rgb(255, 255, 255);
+	box-sizing: border-box;
+	border-radius: 0 50px;
+
+	@media (max-width: 900px) {
+		width: 50%;
+		height: auto;
+	}
+
+	@media (max-width: 750px) {
+		width: 220px;
+		height: auto;
+	}
+
+	@media (max-width: 550px) {
+		border: none;
+	}
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: max-content;
+
+	@media (max-width: 550px) {
+		text-align: center;
+		justify-content: center;
+	}
+}
+
+.name {
+	margin: 0;
+	font-size: 28px;
+	white-space: nowrap;
+	font-weight: bold;
+
+	@media (max-width: 750px) {
+		font-size: 20px;
+	}
+}
+
+.desc {
+	margin: 0;
+	opacity: 0.8;
+	font-size: 14px;
+	white-space: nowrap;
+	background-color: #ededed;
+	padding: 10px;
+	border-radius: 15px;
+	width: min-content;
+
+	@media (max-width: 750px) {
+		font-size: 12px;
+	}
+
+	@media (max-width: 550px) {
+		margin: 0 auto;
+	}
+}
+
+.more {
+	margin: 0;
+	list-style: disc;
+	font-size: 16px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	@media (max-width: 750px) {
+		font-size: 12px;
+		gap: 10px;
+	}
+}
+
+.itemDesck {
+	display: flex;
+	white-space: nowrap;
+	align-items: center;
+	gap: 15px;
+
+	@media (max-width: 900px) {
+		white-space: wrap;
+	}
+}
+
+.marker {
+	background-color: #5273bf;
+	width: 14px;
+	height: 14px;
+	border-radius: 90%;
+
+	@media (max-width: 750px) {
+		width: 10px;
+		height: 10px;
+	}
+}
