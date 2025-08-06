@@ -54,7 +54,7 @@ export const Footer: FC = () => {
 					<div className={cn("text")}>
 						<div className={cn("nav")}>
 							<Link to="/">ГЛАВНАЯ</Link>
-							<Link to="/">БАНК ЗАДАЧ</Link>
+							<Link to="/bank">БАНК ЗАДАЧ</Link>
 							<Link to="/">ПРЕПОДАВАТЕЛИ</Link>
 							<Link to="/">ТАРИФЫ</Link>
 						</div>

@@ -5,11 +5,13 @@ import styles from "./headerStyles.module.scss";
 import classNames from "classnames/bind";
 import BurgerMenu from "./blocks/burgerMenu";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
+import { useLocation } from "react-router-dom";
 
 const cn = classNames.bind(styles);
 
 export const Header: FC = () => {
 	const { isTablet, isMobile } = useMediaQuery();
+	const location = useLocation();
 
 	const isViewBurger = useMemo(() => {
 		return isTablet || isMobile;
@@ -21,8 +23,16 @@ export const Header: FC = () => {
 				{!isViewBurger ? (
 					<div className={cn("header__content")}>
 						<div className={cn("header__content__item")}>
-							<NavItem link="" isActive name="главная" />
-							<NavItem link="" isActive={false} name="банк задач" />
+							<NavItem
+								link="/"
+								isActive={location.pathname == "/"}
+								name="главная"
+							/>
+							<NavItem
+								link="/bank"
+								isActive={location.pathname == "/bank"}
+								name="банк задач"
+							/>
 						</div>
 						<img src="icons/logo_big.svg" />
 						<div className={cn("header__content__item")}>

@@ -1,0 +1,53 @@
+.filtersBlock {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	background-color: #64adf4;
+	padding: 40px;
+	box-sizing: border-box;
+	border-radius: 12px;
+
+	width: 100%;
+	position: relative;
+
+	@media (max-width: 1299px) {
+		width: calc(100% - 20px);
+	}
+}
+
+.resetAbsolute {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	background: transparent;
+	border: none;
+	font-size: 14px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 1;
+	padding: 4px;
+
+	&:hover {
+		color: #eee;
+	}
+}
+
+.group {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.label {
+	font-weight: 600;
+	margin-right: 8px;
+	color: white;
+}
+
+.applyWrapper {
+	margin-top: 16px;
+	align-self: flex-start;
+}

@@ -1,0 +1,8 @@
+.page {
+	width: 100%;
+	position: relative;
+
+	@media (max-width: 1299px) {
+		width: calc(100% - 20px);
+	}
+}
