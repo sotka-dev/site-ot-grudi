@@ -5,6 +5,9 @@ import classNames from "classnames/bind";
 import Welcome from "./blocks/welcome";
 import WhoIs from "./blocks/whois";
 import Teachers from "./blocks/texchers";
+import Calendar from "./blocks/calendar";
+import Faq from "./blocks/faq";
+import Footer from "../../components/footer";
 
 const cn = classNames.bind(styles);
 
@@ -16,7 +19,12 @@ export const MainPage: FC = () => {
 				<Welcome />
 			</div>
 			<WhoIs />
-			<Teachers />
+			<div className={cn("page_b")}>
+				<Teachers />
+				<Calendar />
+			</div>
+			<Faq />
+			<Footer />
 		</div>
 	);
 };
