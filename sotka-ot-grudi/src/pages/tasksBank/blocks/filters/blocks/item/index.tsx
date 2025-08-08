@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import styles from "./item.module.scss";
 import classNames from "classnames/bind";
+import { Link } from "react-router-dom";
 
 const cn = classNames.bind(styles);
 
@@ -29,9 +30,9 @@ export const BankItem = ({ question, answers }: FaqItemProps) => {
 				ref={contentRef}
 			>
 				{answers.map((answer, i) => (
-					<div key={i} className={cn("answer")}>
+					<Link key={i} className={cn("answer")} to="/bankCatalog">
 						{answer}
-					</div>
+					</Link>
 				))}
 			</div>
 		</div>

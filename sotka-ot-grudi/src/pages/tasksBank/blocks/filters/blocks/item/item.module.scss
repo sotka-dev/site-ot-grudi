@@ -53,6 +53,7 @@
 		margin: 0 auto;
 		margin-top: 8px;
 		cursor: pointer;
+		display: block;
 
 		@media (max-width: 1299px) {
 			width: calc(85% - 20px);

@@ -1,19 +1,20 @@
 import type { FC } from "react";
-import Header from "../../components/header";
 import Footer from "../../components/footer";
-import styles from "./mainStyles.module.scss";
+import styles from "./tasksCatalog.module.scss";
 import classNames from "classnames/bind";
-import { FiltersBankTasksProvider } from "./context/FiltersBankTasksProvider";
 import Container from "../../components/container";
-import Filters from "./blocks/filters";
-import BankContent from "./blocks/content";
+
 import Breadcrumbs from "../../components/breadcrumbs";
+import { FiltersBankTasksProvider } from "../tasksBank/context/FiltersBankTasksProvider";
+import { Filters } from "./blocks/filters";
+import Header from "../../components/header";
+import { CatalogContent } from "./blocks/catalogContent";
 
 const cn = classNames.bind(styles);
 
 const crumbs = [{ label: "Главная", path: "/" }, { label: "Банк задач" }];
 
-export const TasksBank: FC = () => {
+export const TasksCatalog: FC = () => {
 	return (
 		<FiltersBankTasksProvider>
 			<div className={cn("page")}>
@@ -25,7 +26,7 @@ export const TasksBank: FC = () => {
 					</div>
 					<div className={cn("content")}>
 						<Filters />
-						<BankContent />
+						<CatalogContent />
 					</div>
 				</Container>
 				<Footer />
@@ -33,5 +34,3 @@ export const TasksBank: FC = () => {
 		</FiltersBankTasksProvider>
 	);
 };
-
-export default TasksBank;
