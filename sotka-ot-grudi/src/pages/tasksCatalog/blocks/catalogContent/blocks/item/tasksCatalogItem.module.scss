@@ -1,0 +1,106 @@
+.container {
+	border: 1px solid #e1e1e1;
+	border-radius: 10px;
+	padding: 36px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (max-width: 550px) {
+			flex-direction: column-reverse;
+			align-items: start;
+			gap: 15px;
+		}
+
+		&__first {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+		}
+
+		&__number {
+			font-family: Nunito;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 100%;
+			color: black;
+		}
+
+		&__tage {
+			color: #64adf4;
+			border-radius: 5px;
+			border: 2px solid #64adf4;
+			font-family: Mulish;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 100%;
+			padding: 4px 14px;
+			cursor: default;
+		}
+
+		&__complexity {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+
+			&__hard {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+			}
+			p {
+				font-family: Mulish;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 100%;
+				color: #6f6f6f;
+			}
+		}
+	}
+
+	&__task {
+		display: flex;
+		flex-direction: column;
+		color: black;
+		gap: 17px;
+
+		&__name {
+			font-family: Nunito;
+			font-size: 18px;
+			font-weight: 800;
+			line-height: 100%;
+		}
+
+		&__text {
+			font-family: Mulish;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 100%;
+		}
+	}
+
+	&__footer {
+		font-family: Mulish;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 100%;
+		color: #64adf4;
+		display: flex;
+		align-items: center;
+		gap: 36px;
+
+		&__butt {
+			cursor: pointer;
+		}
+	}
+}

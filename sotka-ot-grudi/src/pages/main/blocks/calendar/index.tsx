@@ -12,9 +12,9 @@ export const Calendar: FC = () => {
 			<Container>
 				<div className={cn("content")}>
 					<div className={cn("name")}>
-						Календарь&nbsp;
+						КАЛЕНДАРЬ&nbsp;
 						<br className={cn("br")} />
-						событий
+						СОБЫТИЙ
 					</div>
 					<div className={cn("calendar")}>
 						{CALENDAR_MOCK.map((el) => (

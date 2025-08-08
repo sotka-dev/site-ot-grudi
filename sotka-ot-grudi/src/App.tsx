@@ -3,6 +3,7 @@ import "./App.css";
 import MainPage from "./pages/main";
 import TasksBank from "./pages/tasksBank";
 import { TasksCatalog } from "./pages/tasksCatalog";
+import NotFound from "./pages/notFound";
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 				<Route path="/" element={<MainPage />} />
 				<Route path="/bank" element={<TasksBank />} />
 				<Route path="/bankCatalog" element={<TasksCatalog />} />
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</div>
 	);

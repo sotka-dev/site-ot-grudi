@@ -12,11 +12,14 @@ export const Teachers: FC = () => {
 			<Container>
 				<div className={cn("content")}>
 					<div className={cn("name")}>
-						Наши&nbsp;
+						НАШИ&nbsp;
 						<br className={cn("br")} />
-						преподаватели
+						ПРЕПОДАВАТЕЛИ
 					</div>
 					<Slider />
+					<div className={cn("button")}>
+						Записаться&nbsp;к&nbsp;преподавателям
+					</div>
 				</div>
 			</Container>
 		</div>

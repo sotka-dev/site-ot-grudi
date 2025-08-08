@@ -10,7 +10,7 @@ export const WhoIs: FC = () => {
 		<Container>
 			<div className={cn("page")}>
 				<div className={cn("page__textinfo")}>
-					<div className={cn("page__textinfo__name")}>Кто мы такие?</div>
+					<div className={cn("page__textinfo__name")}>КТО МЫ ТАКИЕ?</div>
 					<div className={cn("page__textinfo__info")}>
 						Мы — команда профессионалов, занимающихся подготовкой учеников к ЕГЭ
 						и ОГЭ по математике, информатике и физике. Наши преподаватели имеют

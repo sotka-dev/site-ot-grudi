@@ -35,7 +35,10 @@ export const BurgerMenu = () => {
 					<li>
 						<NavItem
 							link="/bank"
-							isActive={location.pathname == "/bank"}
+							isActive={
+								location.pathname == "/bank" ||
+								location.pathname == "/bankCatalog"
+							}
 							name="банк задач"
 						/>
 					</li>

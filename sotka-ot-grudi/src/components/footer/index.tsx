@@ -40,7 +40,7 @@ export const Footer: FC = () => {
 		<div className={cn("footer")}>
 			<Container>
 				<div className={cn("content")}>
-					<div className={cn("name")}>Контакты</div>
+					<div className={cn("name")}>КОНТАКТЫ</div>
 
 					<div className={cn("contacts")}>
 						{DATA.map((el) => (

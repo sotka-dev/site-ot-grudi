@@ -49,3 +49,24 @@
 		display: block;
 	}
 }
+
+.button {
+	padding: 25px 30px;
+	background-color: #f2594b;
+	border-radius: 8px;
+	cursor: pointer;
+	color: #ffffff;
+	transition: background-color 0.2s ease;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-weight: bold;
+	width: min-content;
+	font-family: Mulish;
+	margin: 0 auto;
+
+	@media (max-width: 500px) {
+		width: calc(100% - 20px);
+		margin: unset;
+		text-align: center;
+	}
+}

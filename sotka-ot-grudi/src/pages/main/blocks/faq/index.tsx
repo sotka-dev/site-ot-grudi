@@ -12,9 +12,9 @@ export const Faq: FC = () => {
 			<Container>
 				<div className={cn("wrapper")}>
 					<div className={cn("name")}>
-						Часто&nbsp;
+						ЧАСТО&nbsp;
 						<br className={cn("br")} />
-						задаваемые вопросы
+						ЗАДАВАЕМЫЕ ВОПРОСЫ
 					</div>
 					<div className={cn("content")}>
 						<FaqItem

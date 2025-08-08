@@ -30,7 +30,10 @@ export const Header: FC = () => {
 							/>
 							<NavItem
 								link="/bank"
-								isActive={location.pathname == "/bank"}
+								isActive={
+									location.pathname == "/bank" ||
+									location.pathname == "/bankCatalog"
+								}
 								name="банк задач"
 							/>
 						</div>

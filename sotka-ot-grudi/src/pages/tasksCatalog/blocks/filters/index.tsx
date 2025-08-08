@@ -50,8 +50,9 @@ export const Filters: FC = () => {
 					/>
 				</div>
 			</div>
-
-			<Button onClick={handleReset} text={"Сбросить\u00A0фильтры"} />
+			<div className={cn("button")}>
+				<Button onClick={handleReset} text={"Сбросить\u00A0фильтры"} />
+			</div>
 		</div>
 	);
 };
